@@ -1,0 +1,13 @@
+CREATE DATABASE apiRest;
+
+USE apiRest;
+
+CREATE TABLE clients(
+     id INT AUTO_INCREMENT,
+     name VARCHAR(60),
+     lastname VARCHAR(60),
+     email VARCHAR(60),
+     city VARCHAR(60),
+     date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      PRIMARY KEY (id)
+);
